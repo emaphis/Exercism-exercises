@@ -1,11 +1,5 @@
 module Bandwagoner
 
-// TODO: please define the 'Coach' record type
-
-// TODO: please define the 'Stats' record type
-
-// TODO: please define the 'Team' record type
-
 type Coach =
   { Name: string
     FormerPlayer: bool }
