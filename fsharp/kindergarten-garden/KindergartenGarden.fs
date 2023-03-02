@@ -27,8 +27,8 @@ let getPlant (student: string) (row: string) index =
    let plantCode = row[getRank(student) + index]
    findPlant(plantCode)
 
-let plants (diagram: string) student =
-    let rows = diagram.Split('\n')
+let plants diagram student =
+    let rows = (diagram: string).Split('\n')
     let plant1 = getPlant student rows[0] 0
     let plant2 = getPlant student rows[0] 1
     let plant3 = getPlant student rows[1] 0
