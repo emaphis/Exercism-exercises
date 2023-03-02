@@ -18,4 +18,4 @@ The exercises to comple are:
 
  Protein Translation: Practice higher-order functions and pattern matching
 
- So far, I've completed:
+ So far, I've completed: Collatz Conjecture 
