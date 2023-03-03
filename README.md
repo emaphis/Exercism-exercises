@@ -1,4 +1,4 @@
-# Exercism-exercises
+x	# Exercism-exercises
 
 ## Trying the 12in23 promotion
 
@@ -19,7 +19,5 @@ The exercises to comple are:
  Protein Translation: Practice higher-order functions and pattern matching
 
  So far, I've completed:
-  
-  Robot Simulator
-  
-  Collatz Conjecture 
+
+ Hamming,  Robot Simulator,  Collatz Conjecture 
