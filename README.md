@@ -20,4 +20,4 @@ The exercises to comple are:
 
  So far, I've completed:
 
- Hamming,  Robot Simulator,  Collatz Conjecture 
+ Hamming,  Robot Simulator,  Collatz Conjecture, Protein Translation
