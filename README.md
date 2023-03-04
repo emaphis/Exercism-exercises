@@ -2,9 +2,9 @@ x	# Exercism-exercises
 
 ## Trying the 12in23 promotion
 
-### 2st month is Functional programming
+### 2st month is Functional programming - Complete
 
-I'm trying F #
+I'm trying F#
 
 The exercises to comple are:
 
@@ -18,6 +18,21 @@ The exercises to comple are:
 
  Protein Translation: Practice higher-order functions and pattern matching
 
- So far, I've completed:
+I've completed all the projects, plus 25 others.
 
- Hamming,  Robot Simulator,  Collatz Conjecture, Protein Translation
+## 3rd month is Mechanical March
+
+I'll be trying Golang
+
+The exercises to complete are:
+
+ Linked List*: Practice allocating/freeing memory, and pointers
+ 
+ Secret Handshake: Explore bitwise operators
+ 
+ Pangram: Explore for loops, strings and characters
+ 
+ Sieve: Practice arrays and for loops
+ 
+ Binary Search: A classic exercise for loops
+ s
