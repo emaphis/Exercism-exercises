@@ -1,4 +1,4 @@
-x	# Exercism-exercises
+# Exercism-exercises
 
 ## Trying the 12in23 promotion
 
@@ -27,12 +27,11 @@ I'll be trying Golang
 The exercises to complete are:
 
  Linked List*: Practice allocating/freeing memory, and pointers
- 
+
  Secret Handshake: Explore bitwise operators
- 
+
  Pangram: Explore for loops, strings and characters
- 
+
  Sieve: Practice arrays and for loops
- 
- Binary Search: A classic exercise for loops
- s
+
+  Binary Search: A classic exercise for loops
