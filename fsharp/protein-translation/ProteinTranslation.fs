@@ -1,7 +1,7 @@
 module ProteinTranslation
 
-let convertToProtein codone = 
-    match codone with
+let convertToProtein codon =
+    match codon with
     | "AUG"                         -> "Methionine"
     | "UUC" | "UUU"                 -> "Phenylalanine"
     | "UUA" | "UUG"                 -> "Leucine"
@@ -21,3 +21,15 @@ let proteins rna =
     |> Seq.map convertToProtein
     |> Seq.takeWhile notStop
     |> Seq.toList
+
+(*
+// Tail recursive
+let proteins rna =
+    let rec loop (rna: string) (acc: string list) =
+        let protein = convertToProtein rna[0..2]
+        if notStop protein then
+            loop rna[3..] (protein :: acc)
+        else acc
+
+    List.rev(loop rna [])
+*)
