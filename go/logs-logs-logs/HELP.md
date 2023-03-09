@@ -13,8 +13,8 @@ Keep in mind that each reviewer will run benchmarks on a different machine, with
 different specs, so the results from these benchmark tests may vary.
 
 ## Submitting your solution
-exercism submit chessboard.go
-You can submit your solution using the `` command.
+
+You can submit your solution using the `exercism submit logs_logs_logs.go` command.
 This command will upload your solution to the Exercism website and print the solution page's URL.
 
 It's possible to submit an incomplete solution which allows you to:

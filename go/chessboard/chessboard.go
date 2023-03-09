@@ -10,9 +10,8 @@ type Chessboard map[string]File
 // within the given file.
 func CountInFile(cb Chessboard, file string) int {
 	count := 0
-	var row = cb[file]
 
-	for _, occupied := range row {
+	for _, occupied := range cb[file] {
 		if occupied {
 			count++
 		}
