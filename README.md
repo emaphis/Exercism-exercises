@@ -34,4 +34,6 @@ The exercises to complete are:
 
  Sieve: Practice arrays and for loops
 
-  Binary Search: A classic exercise for loops
+ Binary Search: A classic exercise for loops
+
+Completed so far: Linked List

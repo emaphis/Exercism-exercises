@@ -41,7 +41,15 @@ func (n *Node) Prev() *Node {
 }
 
 func (l *List) Unshift(v interface{}) {
-	panic("Please implement the Unshift function")
+	node := &Node{Value: v}
+	if l.head == nil {
+		l.head = node
+		l.tail = l.head
+	} else {
+		node.next = l.head
+		l.head = node
+		node.next.prev = node
+	}
 }
 
 func (l *List) Push(v interface{}) {
