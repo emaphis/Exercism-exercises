@@ -36,4 +36,4 @@ The exercises to complete are:
 
  Binary Search: A classic exercise for loops
 
-Completed so far: Linked List
+Completed so far: Linked List, Secret Handshake
