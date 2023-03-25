@@ -37,3 +37,5 @@ The exercises to complete are:
  Binary Search: A classic exercise for loops
 
 Completed Mechanical March exercises plus 30 others.
+
+## Java Track for the 1st Month
