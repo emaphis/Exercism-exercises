@@ -1,0 +1,13 @@
+Ba - Basics 
+Variables, assignments, basic class, invoking methods, static, comments
+hello-world
+Cat: Lasagnia
+
+Extras:
+
+St.- Strings :> basices
+Cat: Log-levels 
+Extras: Two-fer, Reverse-string. Microblog
+
+Bo - Booleans :> Basics
+Analyn's Infiltrations
