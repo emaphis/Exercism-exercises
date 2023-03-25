@@ -5,9 +5,11 @@ Cat: Lasagnia
 
 Extras:
 
-St.- Strings :> basices
+St- Strings :> basices
 Cat: Log-levels 
 Extras: Two-fer, Reverse-string. Microblog
 
 Bo - Booleans :> Basics
 Analyn's Infiltrations
+
+Ch- Chars  :> Strings
