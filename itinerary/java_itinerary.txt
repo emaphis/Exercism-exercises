@@ -17,3 +17,7 @@ LE: blackjack
 
 Ch- Chars  :> Strings
 LE: squeaky-clean
+
+Fo- For-Each loops  :> Conditionals If
+LE bird-watcher
+
