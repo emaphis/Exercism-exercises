@@ -39,3 +39,5 @@ The exercises to complete are:
 Completed Mechanical March exercises plus 30 others.
 
 ## Java Track for the 1st Month
+
+Completeds
