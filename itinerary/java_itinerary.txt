@@ -19,5 +19,7 @@ Ch- Chars  :> Strings
 LE: squeaky-clean
 
 Fo- For-Each loops  :> Conditionals If
-LE bird-watcher
+LE: bird-watcher
 
+Nu- Numbers :> Codionals If
+LE: Cars, AssembleS
