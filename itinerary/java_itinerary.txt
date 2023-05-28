@@ -21,5 +21,5 @@ LE: squeaky-clean
 Fo- For-Each loops  :> Conditionals If
 LE: bird-watcher
 
-Nu- Numbers :> Codionals If
+Nu- Numbers :> Condionals If
 LE: Cars, AssembleS
