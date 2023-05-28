@@ -40,4 +40,16 @@ Completed Mechanical March exercises plus 30 others.
 
 ## Java Track for the 1st Month
 
-Completeds
+Completed - any five exercises
+
+## 4th month Analyticle April in R
+
+etl: in which you can explore reshaping data into a different format
+
+largest-series-product: where you can practice efficient ways of look for patterns in a string of digits
+
+saddle-points: to explore working with multidimensional arrays/matrices
+
+sum-of-multiples: to practice filtering and summation of a sequence of numbers
+
+word-count: convert a string into words and count them
