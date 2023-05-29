@@ -372,3 +372,4 @@ MigrationBackup/
 
 # Go workspace file
 go.work
+.Rproj.user
