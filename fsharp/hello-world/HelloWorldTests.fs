@@ -1,6 +1,5 @@
 module HelloWorldTests
 
-//open FsUnit.Xunit
 open FsUnit.Xunit
 open Xunit
 
