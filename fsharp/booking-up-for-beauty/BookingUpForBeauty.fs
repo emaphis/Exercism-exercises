@@ -20,7 +20,7 @@ let isAfternoonAppointment (appointmentDate: DateTime): bool =
 /// takes an appointment date and returns a description of that date and time:
 /// "You have an appointment on 3/29/2019 3:00:00 PM."
 let description (appointmentDate: DateTime): string =
-     "You have an appointment on "  + appointmentDate.ToShortDateString() + " " + appointmentDate.ToLongTimeString() + "."
+    sprintf "You have an appointment on %O." appointmentDate
 
 
 /// returns this year's anniversary date, which is September 15th
