@@ -18,4 +18,8 @@
     <PackageReference Include="Exercism.Tests" Version="0.1.0-beta1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="Strings.fsx" />
+  </ItemGroup>
+
 </Project>
