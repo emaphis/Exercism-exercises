@@ -1,6 +1,6 @@
 // Tuples - <https://exercism.org/tracks/fsharp/exercises/tisbury-treasure-hunt>
 
-// An immutable grouping of drdered values.
+// An immutable grouping of ordered values.
 
 let tpl1 = ("one", 2)
 let tpl2 = ("one", 2, true)

@@ -17,4 +17,8 @@
     <PackageReference Include="FsUnit.xUnit" Version="4.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="DiscriminatedUnions.fsx" />
+  </ItemGroup>
+
 </Project>

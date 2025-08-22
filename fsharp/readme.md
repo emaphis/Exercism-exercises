@@ -13,3 +13,17 @@ Numbers - Cars Assemble
 If Expressions - Cars Assemble.
 
 Floating Point Numbers - Interest is Interesting
+
+Chars - Squeaky Clean
+
+Pattern Matching - Guessing Game
+
+Recursion - Pizza Pricing
+
+Records - Bandwagoner
+
+Discriminated Unions  - Valentines Day.
+
+Arrays  - Bird Watcher
+
+Lists - Tracks on Tracks on Tracks

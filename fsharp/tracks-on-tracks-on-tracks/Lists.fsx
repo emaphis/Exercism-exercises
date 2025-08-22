@@ -1,17 +1,35 @@
 // Lists <https://exercism.org/tracks/fsharp/exercises/tracks-on-tracks-on-tracks>
 
+// A list in F# is an immutable collection of zero or more values. The values in a list must all have the same type. 
+
+
 // definition
 
-let empty = []
-let singleValue = [5]
+let empty1 = []
+let empty2 = List.empty
+
+let singleValue1 = [5]
+let singleValue2 = List.singleton 5
+
 let threeValues = ["a"; "b"; "c"]
 
 
-// add an element
+// add an element using `::`
 
 let twoToFour = [2; 3; 4]
+// val twoToFour: int list = [2; 3; 4]
+
 let oneToFour = 1 :: twoToFour
-// nt list = [1; 2; 3; 4]
+// val int list = [1; 2; 3; 4]
+
+
+// List can be appended using the @ operator or List.append
+
+let lst1 = [6; 7] @ [8; 9]
+// val lst1: int list = [6; 7; 8; 9]
+
+let lst2 = List.append [6; 7] [8; 9]
+// val lst2: int list = [6; 7; 8; 9]
 
 
 // head - first element; tail - everything else
@@ -20,8 +38,16 @@ List.head oneToFour  // 1
 List.tail oneToFour  // [2; 3; 4]
 
 
-// Lists can be manipulated with functions snd methods in the List module and
-// with pattern matching
+// Lists can be manipulated with functions snd methods in the List module
+
+let len1 = List.length [7; 8]
+// val len1: int = 2
+
+let len2 = [7; 8].Length
+// val len2: int = 2
+
+
+// Lists can be manipulated  with pattern matching using `::` patterns.
 
 let describe1 list =
     match list with
