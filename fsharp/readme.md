@@ -2,6 +2,8 @@
 
 ## Leaning exercises - F# concepts
 
+*** - not a concept yet
+
 Basics Bindings - Lucians Luscious Lasagna
 
 Strings - Log Levels
@@ -27,3 +29,5 @@ Discriminated Unions  - Valentines Day.
 Arrays  - Bird Watcher
 
 Lists - Tracks on Tracks on Tracks
+
+Maps - GradeSchool  ***
