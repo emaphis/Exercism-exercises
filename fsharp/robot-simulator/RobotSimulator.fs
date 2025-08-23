@@ -36,7 +36,6 @@ let robotAdvance robot =
     | South -> { robot with position = (x, y - 1) }
     | West  -> { robot with position = (x - 1, y) }
 
-
 // R' is Right | 'L' is Left | 'A' is Advance
 
 /// Move Robot given instruction represented as a char
@@ -51,8 +50,6 @@ let processInstruction robot instruction =
 /// Create a Robot with direction and position
 let create direction position = { direction = direction; position = position}
 
-
 /// Move a Robot given as a sequence of instructions passed as a string.
 let move instructions robot =
-    let instructionList = (instructions: string).ToCharArray() |> Array.toList
-    List.fold processInstruction robot instructionList
+    Seq.fold processInstruction robot instructions
