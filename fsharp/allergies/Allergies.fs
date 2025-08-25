@@ -21,5 +21,5 @@ let allergicTo (codedAllergies: int) (allergen: Allergen) =
 let list (codedAllergies: int) =
     Enum.GetValues(typeof<Allergen>)
     |> Seq.cast<Allergen>
-    |> List.ofSeq   // I don't know why this has to be a list and not a seq
-    |> List.filter (allergicTo codedAllergies)
+    |> Seq.filter (allergicTo codedAllergies)
+    |> List.ofSeq
