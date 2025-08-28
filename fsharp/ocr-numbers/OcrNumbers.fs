@@ -1,80 +1,71 @@
 module OcrNumbers
 
-// Number array definitions
 
-let lst0 =
-    [ " _ "
-      "| |"
-      "|_|"
-      "   " ]
+/// Convert OCR digits (tuples) to string digits
+let convertDigit (dig: string * string * string) =
+   match dig with
+   | ( " _ ",
+       "| |",
+       "|_|" )   -> "0"
 
-let lst1 =
-    [ "   ";
-      "  |";
-      "  |";
-      "   " ]
+   | ("   ", "  |", "  |")  -> "1"
 
-let lst2 =
-    [ " _ ";
-      " _|";
-      "|_ ";
-      "   " ]
+   | ( " _ ",
+       " _|",
+       "|_ " )  -> "2"
 
-let lst3 =
-     [ " _ ";
-       " _|";
-       " _|";
-       "   " ]
+   | ( " _ ",
+       " _|",
+       " _|" )  -> "3"
 
-let lst4 =
-     [ "   ";
-       "|_|";
-       "  |";
-       "   " ]
+   | ( "   ",
+       "|_|",
+       "  |" ) -> "4"
 
-let lst5 =
-    [ " _ ";
-      "|_ ";
-      " _|";
-      "   " ]
+   | ( " _ ",
+       "|_ ",
+       " _|" ) -> "5"
 
-let lst6 =
-     [ " _ ";
-       "|_ ";
-       "|_|";
-       "   " ]
+   | ( " _ ",
+       "|_ ",
+       "|_|" ) -> "6"
 
-let lst7 =
-    [ " _ ";
-      "  |";
-      "  |";
-      "   " ]
+   | ( " _ ",
+       "  |",
+       "  |" ) -> "7"
 
-let lst8 =
-    [ " _ ";
-      "|_|";
-      "|_|";
-      "   " ]
+   | ( " _ ",
+       "|_|",
+       "|_|" ) -> "8"
 
-let lst9 =
-    [ " _ ";
-      "|_|";
-      " _|";
-      "   " ]
+   | ( " _ ",
+       "|_|",
+       " _|" ) -> "9"
 
-let convertDigit (dig: string list) =
-   if   dig.Length % 4 <> 0 then None
-   elif (List.exists (fun line -> (String.length line) % 3 <> 0) dig) then None
-   elif dig = lst0 then Some "0"
-   elif dig = lst1 then Some "1"
-   elif dig = lst2 then Some "2"
-   elif dig = lst3 then Some "3"
-   elif dig = lst4 then Some "4"
-   elif dig = lst5 then Some "5"
-   elif dig = lst6 then Some "6"
-   elif dig = lst7 then Some "7"
-   elif dig = lst8 then Some "8"
-   elif dig = lst9 then Some "9"
-   else Some "?"
+    | _ -> "?"
 
-let convert input = convertDigit input
+let convertDigits (inputList: string list list) =
+    List.zip3 inputList[0] inputList[1] inputList[2]
+    |> List.map convertDigit
+    |> String.concat ""
+
+let parseLine line =
+    Seq.chunkBySize 3 line
+    |> Seq.toList
+    |> List.map (fun array -> System.String(array))
+
+let parseInput input =
+    input
+    |> List.map parseLine
+    |> List.chunkBySize 4
+    |> List.map convertDigits
+    |> String.concat "," // Numbers separated by empty lines are recognized. Lines are joined by commas.
+
+let goodSize (input: string list) =
+    input.Length % 4 = 0 &&
+    input |> List.forall(fun str -> str.Length % 3 = 0)
+
+
+let convert input =
+    if goodSize input then Some (parseInput input)
+    else None
