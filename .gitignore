@@ -375,3 +375,28 @@ MigrationBackup/
 # Go workspace file
 go.work
 .Rproj.user
+
+# Gradle-specific files
+gradle/
+**/build/
+!**/src/**/build/
+
+# Gradle Wrapper files
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# Cache and temporary files
+gradle-task-name-cache
+*.lock
+
+# IDE-specific files (e.g., IntelliJ IDEA)
+idea/
+*.iml
+
+# OS-specific files
+DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
