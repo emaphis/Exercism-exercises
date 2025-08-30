@@ -9,7 +9,7 @@ let normalize str =
 
 let isIsogram (str: string): bool =
     let seq = normalize str
-    let len = Seq.length seq
+    let len = seq |> Seq.length
     let dst = seq |> Seq.distinct |> Seq.length
 
     len = dst

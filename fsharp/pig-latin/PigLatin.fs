@@ -20,8 +20,6 @@ let latinizeWord  (word : string) =
 
 // `input` is a sting of words separated by spaces
 let translate (input: string) =
-    let array =input.Split(' ')
-    array
-    |> Array.toList
-    |> List.map latinizeWord
+    input.Split(' ')
+    |> Array.map latinizeWord
     |> String.concat " "
