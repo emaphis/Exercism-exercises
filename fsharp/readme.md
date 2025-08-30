@@ -33,3 +33,5 @@ Lists - Tracks on Tracks on Tracks
 Maps - GradeSchool  ***
 
 Enum, Bithandling - Allergies ***
+
+Result type, Railroad oriented programming - PhoneNumber ***
