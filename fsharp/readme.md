@@ -4,6 +4,8 @@
 
 *** - not a concept yet
 
+ooo - update material
+
 Basics Bindings - Lucians Luscious Lasagna
 
 Strings - Log Levels
@@ -35,3 +37,7 @@ Maps - GradeSchool  ***
 Enum, Bithandling - Allergies ***
 
 Result type, Railroad oriented programming - PhoneNumber ***
+
+Should moved to Lists - High Scores ooo
+
+lock syncroniation - BankAccount ***
