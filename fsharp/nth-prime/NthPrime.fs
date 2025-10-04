@@ -1,19 +1,25 @@
 module NthPrime
 
-/// Lazy sequence of primes.using Sieve of Eratosthenes
-let lazyPrimes =
-    let rec sieve (numbers: int seq) =
-        seq {
-            let head = Seq.head numbers  // Take the first number as prime
-            yield head                               // Yield the prime number
-            yield! sieve (Seq.filter (fun x -> x % head <> 0) (Seq.tail numbers))
-        }
-    sieve (Seq.initInfinite ((+) 2))  // Start with 2 as a prime
+/// Check if number is prime
+let isPrime n =
+    let last = int (sqrt (float n))
+    seq { 2 .. last }
+    |> Seq.exists (fun num -> n % num = 0)
+    |> not
+
+
+/// Lazy sequence of primes
+let primes =
+    Seq.initInfinite id
+    |> Seq.skip 1
+    |> Seq.choose (fun num ->
+                            if isPrime num then Some num
+                            else None )
     
 
 let prime nth : int option =
-    let seq1 = lazyPrimes |> Seq.take nth
-    try 
-        Some (Seq.last seq1)
-    with
-        :? System.InvalidOperationException  -> None
+    if nth <= 0 then None
+    else
+        primes
+        |> Seq.item nth
+        |> Some
