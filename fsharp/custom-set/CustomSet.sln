@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CustomSet", "CustomSet.fsproj", "{3FA1DC2E-890A-AAF2-47EB-52F9E32A0CD6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3FA1DC2E-890A-AAF2-47EB-52F9E32A0CD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FA1DC2E-890A-AAF2-47EB-52F9E32A0CD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FA1DC2E-890A-AAF2-47EB-52F9E32A0CD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FA1DC2E-890A-AAF2-47EB-52F9E32A0CD6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB3622B4-B396-4DF3-94D0-072E82956BE9}
+	EndGlobalSection
+EndGlobal
