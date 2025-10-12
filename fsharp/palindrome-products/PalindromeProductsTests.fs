@@ -35,12 +35,12 @@ let ``Find the largest palindrome from triple digit factors`` () =
     let expected: int option * (int * int) list = (Some 906609, [(913, 993)])
     largest 100 999 |> should equal expected
 
-[<Fact(Skip = "Remove this Skip property to run this test")>]
+[<Fact>]
 let ``Find the smallest palindrome from four digit factors`` () =
     let expected: int option * (int * int) list = (Some 1002001, [(1001, 1001)])
     smallest 1000 9999 |> should equal expected
 
-[<Fact(Skip = "Remove this Skip property to run this test")>]
+[<Fact>]
 let ``Find the largest palindrome from four digit factors`` () =
     let expected: int option * (int * int) list = (Some 99000099, [(9901, 9999)])
     largest 1000 9999 |> should equal expected

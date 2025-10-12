@@ -4,7 +4,8 @@ module PalindromeProducts
 /// True if number is a palindrome, using fast reverse' algo
 let isPalendrome' num =
 
-    // fast (mutable) reverse algo    
+    // fast (mutable) reverse algo
+    // Goes from about 12 seconds to 3 seconds on the 4 digit exampesls
     let reverse' num =
         let mutable current = num
         let mutable result = 0
@@ -18,13 +19,14 @@ let isPalendrome' num =
 let getPalindromes minFactor maxFactor   =
     [for y in minFactor .. maxFactor do
         for x in minFactor .. y do
-            yield x*y, (x, y)]
-    |> List.filter (fun x -> isPalendrome' (fst x))
+            let prod = x * y
+            if isPalendrome' prod then
+                yield x*y, (x, y)]
 
-let getValue palindromes pred =
+let getValue palindromes (minmax: int list -> int) =
     palindromes
     |> List.map fst
-    |> pred 
+    |> minmax 
 
 let getFactors palindromes value =
     palindromes
@@ -32,31 +34,21 @@ let getFactors palindromes value =
     |> List.map snd
     |> List.sort
 
+let calcMinMaxPalindrome (minmax: int list -> int) minFactor maxFactor =
+    if minFactor > maxFactor then invalidArg "minFactor" "min must be <= max"
+    
+    let palindromes =
+        getPalindromes minFactor maxFactor
+
+    if List.isEmpty palindromes then (None, [])
+    else
+        let value= getValue palindromes minmax
+        let factors = getFactors palindromes value
+
+        (Some value, factors)
 
 let largest minFactor maxFactor =
-    if minFactor > maxFactor then invalidArg "minFactor" "min must be <= max"
-    
-    let palindromes =
-        getPalindromes minFactor maxFactor
-
-    if List.isEmpty palindromes then (None, [])
-    else
-        let value= getValue palindromes List.max
-        let factors = getFactors palindromes value
-
-        (Some value, factors)
-
-
+    calcMinMaxPalindrome List.max minFactor maxFactor
 
 let smallest minFactor maxFactor =
-    if minFactor > maxFactor then invalidArg "minFactor" "min must be <= max"
-    
-    let palindromes =
-        getPalindromes minFactor maxFactor
-
-    if List.isEmpty palindromes then (None, [])
-    else
-        let value= getValue palindromes List.min
-        let factors = getFactors palindromes value
-
-        (Some value, factors)
+   calcMinMaxPalindrome List.min minFactor maxFactor
