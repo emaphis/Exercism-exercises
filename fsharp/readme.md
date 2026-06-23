@@ -34,10 +34,13 @@ Lists - Tracks on Tracks on Tracks
 
 Maps Sets - GradeSchool  ***
 
-Enum, Bithandling - Allergies ***
+Enum, Bit handling - Allergies ***
 
 Result type, Railroad oriented programming - PhoneNumber ***
 
 Should moved to Lists - High Scores ooo
 
-lock syncroniation - BankAccount ***
+lock synchronization - BankAccount ***
+
+Option - Role playing Game - needs pattern matching
+
