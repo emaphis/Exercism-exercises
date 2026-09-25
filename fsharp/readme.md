@@ -12,6 +12,8 @@ Annalyn's Infiltration  - Learning - Booleans
 
 Log Levels - Learning - Strings ooo split, array access.
 
+Valentines Day - Discriminated Unions, pattern matching.
+
 Numbers - Cars Assemble
 
 If Expressions - Cars Assemble.
@@ -25,8 +27,6 @@ Pattern Matching - Guessing Game
 Recursion - Pizza Pricing
 
 Records - Bandwagoner
-
-Discriminated Unions  - Valentines Day.
 
 Arrays  - Bird Watcher
 
