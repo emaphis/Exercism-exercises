@@ -1,6 +1,6 @@
 module AnnalynsInfiltration
 
-let canFastAttack (knightIsAwake: bool): bool = 
+let canFastAttack (knightIsAwake: bool): bool =
     (not knightIsAwake)
 
 let canSpy (knightIsAwake: bool) (archerIsAwake: bool) (prisonerIsAwake: bool): bool =

@@ -10,7 +10,7 @@ Lucians Luscious Lasagna - Learning - Basics Bindings - let
 
 Annalyn's Infiltration  - Learning - Booleans
 
-Strings - Log Levels
+Log Levels - Learning - Strings ooo split, array access.
 
 Numbers - Cars Assemble
 
