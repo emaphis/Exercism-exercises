@@ -6,11 +6,11 @@
 
 ooo - update material
 
-Basics Bindings - Lucians Luscious Lasagna
+Lucians Luscious Lasagna - Learning - Basics Bindings - let
+
+Annalyn's Infiltration  - Learning - Booleans
 
 Strings - Log Levels
-
-Booleans - Annalyn's Infiltration
 
 Numbers - Cars Assemble
 
