@@ -17,19 +17,18 @@ let mapToList graph =
     | Some x -> graphToList x
     | None -> []
 
-
 [<Fact>]
 let ``Results in the same tree if the input tree is a singleton`` () =
     let tree = mkGraph "x" []
     let expected = mkGraph "x" []
     fromPOV "x" tree |> mapToList  |> should equal <| graphToList expected
-(*
-[<Fact(Skip = "Remove this Skip property to run this test")>]
+
+[<Fact>]
 let ``Can reroot a tree with a parent and one sibling`` () =
     let tree = mkGraph "parent" [mkGraph "x" []; mkGraph "sibling" []]
     let expected = mkGraph "x" [mkGraph "parent" [mkGraph "sibling" []]]
     fromPOV "x" tree |> mapToList  |> should equal <| graphToList expected
-
+(*
 [<Fact(Skip = "Remove this Skip property to run this test")>]
 let ``Can reroot a tree with a parent and many siblings`` () =
     let tree = mkGraph "parent" [mkGraph "a" []; mkGraph "x" []; mkGraph "b" []; mkGraph "c" []]
@@ -98,5 +97,4 @@ let ``Errors if destination does not exist`` () =
 let ``Errors if source does not exist`` () =
     let tree = mkGraph "parent" [mkGraph "x" [mkGraph "kid-0" []; mkGraph "kid-1" []]; mkGraph "sibling-0" []; mkGraph "sibling-1" []]
     tracePathBetween "nonexistent" "x" tree |> should equal None
-
 *)
