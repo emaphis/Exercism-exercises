@@ -6,8 +6,6 @@
 
 ooo - update material
 
-Learning exercises
-
 Lucians Luscious Lasagna - Basics Bindings - let
 
 Annalyn's Infiltration  - Booleans
@@ -22,7 +20,7 @@ Cars Assemble - If Expressions
 
 Booking for Beauty - DateTimes
 
-Floating Point Numbers - Interest is Interesting
+Interest is Interesting  - Floating Point Numbers
 
 Chars - Squeaky Clean
 
