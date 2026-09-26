@@ -6,17 +6,19 @@
 
 ooo - update material
 
-Lucians Luscious Lasagna - Learning - Basics Bindings - let
+Learning exercises
 
-Annalyn's Infiltration  - Learning - Booleans
+Lucians Luscious Lasagna - Basics Bindings - let
 
-Log Levels - Learning - Strings ooo split, array access.
+Annalyn's Infiltration  - Booleans
+
+Log Levels - Strings ooo split, array access.
 
 Valentines Day - Discriminated Unions, pattern matching.
 
-Numbers - Cars Assemble
+Cars Assemble - Numbers
 
-If Expressions - Cars Assemble.
+Cars Assemble - If Expressions
 
 Floating Point Numbers - Interest is Interesting
 
