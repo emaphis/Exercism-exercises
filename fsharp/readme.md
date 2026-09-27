@@ -32,8 +32,10 @@ Bandwagoner - Records
 
 Pizza Pricing - Recursion. tail recursion, pattern matching
 
-Lists - Tracks on Tracks on Tracks
+Tisbury Treasure Hunt - Tuples
 
+Lists - Tracks on Tracks on Tracks
+S
 Maps Sets - GradeSchool  ***
 
 Enum, Bit handling - Allergies ***
