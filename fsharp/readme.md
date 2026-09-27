@@ -36,6 +36,8 @@ Tisbury Treasure Hunt - Tuples
 
 Tracks on Tracks on Tracks - Lists, Pattern matching
 
+Role playing Game - Option, Pattern matching
+
 Maps Sets - GradeSchool  ***
 
 Enum, Bit handling - Allergies ***
@@ -45,5 +47,3 @@ Result type, Railroad oriented programming - PhoneNumber ***
 Should moved to Lists - High Scores ooo
 
 lock synchronization - BankAccount ***
-
-Option - Role playing Game - needs pattern matching
