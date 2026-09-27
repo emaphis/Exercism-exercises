@@ -24,7 +24,7 @@ Interest is Interesting  - Floating Point Numbers
 
 Chars - Squeaky Clean
 
-Pattern Matching - Guessing Game
+Guessing Game - Pattern Matching 
 
 Recursion - Pizza Pricing
 
