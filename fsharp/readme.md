@@ -30,7 +30,7 @@ Bird Watcher - Arrays, Array functions ooo
 
 Bandwagoner - Records
 
-Recursion - Pizza Pricing
+Pizza Pricing - Recursion. tail recursion, pattern matching
 
 Lists - Tracks on Tracks on Tracks
 
