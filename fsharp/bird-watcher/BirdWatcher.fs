@@ -2,16 +2,14 @@ module BirdWatcher
 
 open System.Linq
 
-let lastWeek: int[] =
-    [| 0; 2; 5; 3; 7; 8; 4 |]
+let lastWeek: int[] = [| 0; 2; 5; 3; 7; 8; 4 |]
 
 // Yesterday is the 5th day
 let yesterday(counts: int[]): int = counts[5]
 
 let total(counts: int[]): int = counts.Sum()
 
-let dayWithoutBirds(counts: int[]): bool =
-    Array.contains 0 counts
+let dayWithoutBirds(counts: int[]): bool = counts.Contains 0
 
 let incrementTodaysCount(counts: int[]): int[] =
     let today = counts.Length - 1

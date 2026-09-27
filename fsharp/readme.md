@@ -22,15 +22,15 @@ Booking for Beauty - DateTimes
 
 Interest is Interesting  - Floating Point Numbers
 
-Chars - Squeaky Clean
+Squeaky Clean - Chars
 
-Guessing Game - Pattern Matching 
+Guessing Game - Pattern Matching
+
+Bird Watcher - Arrays, Array functions ooo
 
 Recursion - Pizza Pricing
 
 Records - Bandwagoner
-
-Arrays  - Bird Watcher
 
 Lists - Tracks on Tracks on Tracks
 
