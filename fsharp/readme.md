@@ -1,4 +1,4 @@
-# Exercism F#
+# Exercism FSharp
 
 ## Leaning exercises - F# concepts
 
@@ -28,9 +28,9 @@ Guessing Game - Pattern Matching
 
 Bird Watcher - Arrays, Array functions ooo
 
-Recursion - Pizza Pricing
+Bandwagoner - Records
 
-Records - Bandwagoner
+Recursion - Pizza Pricing
 
 Lists - Tracks on Tracks on Tracks
 
@@ -45,4 +45,3 @@ Should moved to Lists - High Scores ooo
 lock synchronization - BankAccount ***
 
 Option - Role playing Game - needs pattern matching
-
