@@ -34,8 +34,8 @@ Pizza Pricing - Recursion. tail recursion, pattern matching
 
 Tisbury Treasure Hunt - Tuples
 
-Lists - Tracks on Tracks on Tracks
-S
+Tracks on Tracks on Tracks - Lists, Pattern matching
+
 Maps Sets - GradeSchool  ***
 
 Enum, Bit handling - Allergies ***
