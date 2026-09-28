@@ -44,6 +44,8 @@ Improved Password Checker - Flag Discriminated Unions
 
 ## Practice exercises
 
+Two Fer - Strings, Option type
+
 Maps Sets - GradeSchool  ***
 
 Enum, Bit handling - Allergies ***
