@@ -1,13 +1,11 @@
 module Leap
 
 let leapYear (year: int): bool =
-    let divBy400 n = n % 400 = 0
-    let divBy100 n = n % 100 = 0
-    let divBy4  n = n % 4 = 0
-
-    if divBy4 year && not (divBy100 year) then true
-    elif divBy400 year then true
-    else false
+    match year with
+    | num when num % 400 = 0 -> true
+    | num when num % 100 = 0 -> false
+    | num when num % 4 = 0   -> true
+    | _ -> false
 
 // or more concisely
 // (year % 400 = 0) || ((year % 4 = 0) && (year % 100 <> 0))

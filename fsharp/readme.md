@@ -48,6 +48,8 @@ Two Fer - Strings, Option type
 
 Line Up - Numbers, Modular math, Pattern matching
 
+Leap - Numbers, Modular math
+
 Maps Sets - GradeSchool  ***
 
 Enum, Bit handling - Allergies ***

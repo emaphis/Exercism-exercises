@@ -24,6 +24,8 @@ For a delightful, four-minute explanation of the whole phenomenon of leap years,
 
 Your task is to determine whether a given year is a leap year.
 
+## Notes
+
 The [DateTime class][datetime] provides a built-in [IsLeapYear][datetime.isleapyear] method
 which you should pretend doesn't exist for the purposes of implementing this exercise.
 
