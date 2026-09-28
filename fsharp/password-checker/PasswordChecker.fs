@@ -9,17 +9,16 @@ type PasswordError =
     | MissingDigit
     | MissingSymbol
 
-/// Validate the given password against the rules defined in the instructions. If it meets all
-/// of the rules, return a result indicating success; otherwise return a result indicating
+/// Validate the given password against the rules defined in the instructions. If it meets
+/// all the rules, return a result indicating success; otherwise return a result indicating
 /// failure and an error indicating which rule was violated.
 let checkPassword (password: string) : Result<string, PasswordError> =
-    let symbols = "!@#$%^&*"
     match password with
-    | pswd when pswd.Length < 12 -> Error LessThan12Characters
-    | pswd when pswd |> String.exists System.Char.IsUpper  |> not -> Error MissingUppercaseLetter
-    | pswd when pswd |> String.exists System.Char.IsLower  |> not -> Error MissingLowercaseLetter
-    | pswd when pswd |> String.exists System.Char.IsDigit  |> not -> Error MissingDigit
-    | pswd when pswd |> String.exists (fun chr -> symbols.Contains chr) |> not -> Error MissingSymbol
+    | _ when password.Length < 12 -> Error LessThan12Characters
+    | _ when not (password |> String.exists Char.IsUpper) -> Error MissingUppercaseLetter
+    | _ when not (password |> String.exists Char.IsLower) -> Error MissingLowercaseLetter
+    | _ when not (password |> String.exists Char.IsDigit) -> Error MissingDigit
+    | _ when not (password |> String.exists "!@#$%^&*".Contains) -> Error MissingSymbol
     | _ -> Ok password
 
 /// Return a human-readable message indicating the meaning of the given result value.

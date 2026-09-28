@@ -36,7 +36,13 @@ Tisbury Treasure Hunt - Tuples
 
 Tracks on Tracks on Tracks - Lists, Pattern matching
 
-Role playing Game - Option, Pattern matching
+Role playing Game - Option type, Pattern matching
+
+Password Checker - Result type, Pattern matching, String functions
+
+Improved Password Checker - Flag Discriminated Unions
+
+## Practice exercises
 
 Maps Sets - GradeSchool  ***
 
