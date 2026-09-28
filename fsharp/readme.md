@@ -46,6 +46,8 @@ Improved Password Checker - Flag Discriminated Unions
 
 Two Fer - Strings, Option type
 
+Line Up - Numbers, Modular math, Pattern matching
+
 Maps Sets - GradeSchool  ***
 
 Enum, Bit handling - Allergies ***
