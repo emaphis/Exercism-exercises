@@ -50,6 +50,8 @@ Line Up - Numbers, Modular math, Pattern matching
 
 Leap - Numbers, Modular math
 
+Queen Attack - None,
+
 Maps Sets - GradeSchool  ***
 
 Enum, Bit handling - Allergies ***
