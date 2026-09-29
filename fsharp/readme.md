@@ -12,7 +12,7 @@ Annalyn's Infiltration  - Booleans
 
 Log Levels - Strings ooo split, array access.
 
-Valentines Day - Discriminated Unions, pattern matching.
+Valentines Day - Discriminated Unions - pattern matching.
 
 Cars Assemble - Numbers
 
@@ -30,31 +30,35 @@ Bird Watcher - Arrays, Array functions ooo
 
 Bandwagoner - Records
 
-Pizza Pricing - Recursion. tail recursion, pattern matching
+Pizza Pricing - Recursion - Tail-call recursion, pattern matching
 
 Tisbury Treasure Hunt - Tuples
 
-Tracks on Tracks on Tracks - Lists, Pattern matching
+Tracks on Tracks on Tracks - Lists - Pattern matching
 
-Role playing Game - Option type, Pattern matching
+Role playing Game - Option type - Pattern matching
 
-Password Checker - Result type, Pattern matching, String functions
+Password Checker - Result type - Pattern matching, String functions
 
 Improved Password Checker - Flag Discriminated Unions
 
 ## Practice exercises
 
-Two Fer - Strings, Option type
+Two Fer - Strings - Option type
 
-Line Up - Numbers, Modular math, Pattern matching
+Line Up - Numbers - Modular math, Pattern matching
 
-Leap - Numbers, Modular math
+Leap - Numbers - Modular math
 
-Queen Attack - None,
+Queen Attack - None -
 
-Raindrops - None
+Raindrops - None -
 
-Accumulate - Recursion, Higher-order function, Tail-call
+Accumulate - Recursion - Higher-order function, Tail-call
+
+Space Age - Floating Point Numbers, Discriminated Unions -
+
+---
 
 Maps Sets - GradeSchool  ***
 

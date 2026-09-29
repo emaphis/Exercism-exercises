@@ -53,6 +53,8 @@ See [Year on Wikipedia][year] for more ways to measure a year.
 [year]: https://en.wikipedia.org/wiki/Year#Summary
 ~~~~
 
+## Hints
+
 - Try to focus on minimizing the amount of code duplication. If you find yourself doing a lot of copy/paste take a step back and think about how the code can be refactored
 - [Pattern matching](https://fsharpforfunandprofit.com/posts/match-expression/) is more idiomatic than using dictionaries to translate values
 
@@ -74,4 +76,4 @@ See [Year on Wikipedia][year] for more ways to measure a year.
 
 ### Based on
 
-Partially inspired by Chapter 1 in Chris Pine's online Learn to Program tutorial. - https://pine.fm/LearnToProgram/?Chapter=01
+Partially inspired by Chapter 1 in Chris Pine's online Learn to Program tutorial. - https://pine.fm/LearnToProgram/chap_01.html
