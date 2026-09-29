@@ -25,6 +25,8 @@ In the end, you should be able to:
 Note that all our students only have one name (it's a small town, what do you want?), and each student cannot be added more than once to a grade or the roster.
 If a test attempts to add the same student more than once, your implementation should indicate that this is incorrect.
 
+## Hints
+
 For this exercise the following F# feature comes in handy:
 
 - The [Map](https://en.wikibooks.org/wiki/F_Sharp_Programming/Sets_and_Maps#Maps) type associates keys with values. It is very similar to .NET's `Dictionary<TKey, TValue>` type, but with one major difference: `Map` is [immutable](https://fsharpforfunandprofit.com/posts/correctness-immutability/).

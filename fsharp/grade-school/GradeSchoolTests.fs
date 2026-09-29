@@ -12,14 +12,14 @@ let ``Roster is empty when no student is added`` () =
 
 [<Fact>]
 let ``Student is added to the roster`` () =
-    let school = 
+    let school =
         empty
         |> add "Aimee" 2
     roster school |> should equal ["Aimee"]
 
 [<Fact>]
 let ``Multiple students in the same grade are added to the roster`` () =
-    let school = 
+    let school =
         empty
         |> add "Blair" 2
         |> add "James" 2
@@ -28,7 +28,7 @@ let ``Multiple students in the same grade are added to the roster`` () =
 
 [<Fact>]
 let ``Student not added to same grade in the roster more than once`` () =
-    let school = 
+    let school =
         empty
         |> add "Blair" 2
         |> add "James" 2
@@ -38,7 +38,7 @@ let ``Student not added to same grade in the roster more than once`` () =
 
 [<Fact>]
 let ``Students in multiple grades are added to the roster`` () =
-    let school = 
+    let school =
         empty
         |> add "Chelsea" 3
         |> add "Logan" 7
@@ -46,7 +46,7 @@ let ``Students in multiple grades are added to the roster`` () =
 
 [<Fact>]
 let ``Student not added to multiple grades in the roster`` () =
-    let school = 
+    let school =
         empty
         |> add "Blair" 2
         |> add "James" 2
@@ -56,7 +56,7 @@ let ``Student not added to multiple grades in the roster`` () =
 
 [<Fact>]
 let ``Students are sorted by grades in the roster`` () =
-    let school = 
+    let school =
         empty
         |> add "Jim" 3
         |> add "Peter" 2
@@ -65,7 +65,7 @@ let ``Students are sorted by grades in the roster`` () =
 
 [<Fact>]
 let ``Students are sorted by name in the roster`` () =
-    let school = 
+    let school =
         empty
         |> add "Peter" 2
         |> add "Zoe" 2
@@ -74,7 +74,7 @@ let ``Students are sorted by name in the roster`` () =
 
 [<Fact>]
 let ``Students are sorted by grades and then by name in the roster`` () =
-    let school = 
+    let school =
         empty
         |> add "Peter" 2
         |> add "Anna" 1
@@ -92,7 +92,7 @@ let ``Grade is empty if no students in the roster`` () =
 
 [<Fact>]
 let ``Grade is empty if no students in that grade`` () =
-    let school = 
+    let school =
         empty
         |> add "Peter" 2
         |> add "Zoe" 2
@@ -102,7 +102,7 @@ let ``Grade is empty if no students in that grade`` () =
 
 [<Fact>]
 let ``Student not added to same grade more than once`` () =
-    let school = 
+    let school =
         empty
         |> add "Blair" 2
         |> add "James" 2
@@ -112,7 +112,7 @@ let ``Student not added to same grade more than once`` () =
 
 [<Fact>]
 let ``Student not added to multiple grades`` () =
-    let school = 
+    let school =
         empty
         |> add "Blair" 2
         |> add "James" 2
@@ -122,7 +122,7 @@ let ``Student not added to multiple grades`` () =
 
 [<Fact>]
 let ``Student not added to other grade for multiple grades`` () =
-    let school = 
+    let school =
         empty
         |> add "Blair" 2
         |> add "James" 2
@@ -132,9 +132,10 @@ let ``Student not added to other grade for multiple grades`` () =
 
 [<Fact>]
 let ``Students are sorted by name in a grade`` () =
-    let school = 
+    let school =
         empty
         |> add "Franklin" 5
         |> add "Bradley" 5
         |> add "Jeff" 1
     grade 5 school |> should equal ["Bradley"; "Franklin"]
+

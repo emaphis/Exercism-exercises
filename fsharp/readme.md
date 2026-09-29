@@ -58,9 +58,9 @@ Accumulate - Recursion - Higher-order function, Tail-call
 
 Space Age - Floating Point Numbers, Discriminated Unions -
 
----
+GradeSchool  - None - Maps  ***
 
-Maps Sets - GradeSchool  ***
+---
 
 Enum, Bit handling - Allergies ***
 
