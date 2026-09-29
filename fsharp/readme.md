@@ -60,6 +60,8 @@ Space Age - Floating Point Numbers, Discriminated Unions -
 
 GradeSchool  - None - Maps  ***
 
+Clock - Numbers - Modular arithmetic
+
 ---
 
 Enum, Bit handling - Allergies ***
