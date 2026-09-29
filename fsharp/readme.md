@@ -54,6 +54,8 @@ Queen Attack - None,
 
 Raindrops - None
 
+Accumulate - Recursion, Higher-order function, Tail-call
+
 Maps Sets - GradeSchool  ***
 
 Enum, Bit handling - Allergies ***
