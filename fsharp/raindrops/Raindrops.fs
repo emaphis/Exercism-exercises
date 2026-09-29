@@ -1,21 +1,24 @@
 module Raindrops
 
-let rainMaker (divisor: int) (sound: string) =
-    fun (number, acc) ->
-        if number % divisor = 0 then (number, acc + sound)
-        else (number, acc)
+// Extensible solution: Add (divisor, drop sound) pairs to the `mapping` list
+// passed to the calcRainDrop function.
 
-let pling = rainMaker 3 "Pling"
-let plang = rainMaker 5 "Plang"
-let plong = rainMaker 7 "Plong"
-
+/// Produce raindrop sound or number as a string given a list of divisor drop sound pair
+/// and number to test
+let calcRainDrop mapping n =
+    let rec loop mapping acc =
+        match mapping with
+        | []    -> if acc = "" then string n else acc
+        | head::tail ->
+            let value =
+                head |> (fun (div, drop) -> if n % div = 0 then drop else "")
+            loop tail (acc + value)
+    loop mapping ""
 
 let convert (number: int): string =
-    (number, "")
-    |> pling
-    |> plang
-    |> plong
-    |> fun output ->
-        match output with
-        | (num, "") -> num.ToString()
-        | (_, sound) -> sound 
+    let mapping = [ (3, "Pling"); (5, "Plang"); (7, "Plong") ]
+    calcRainDrop mapping number
+
+// test
+//let drops =
+//    [1..105] |> List.map (isRainDrop [ (3, "Pling"); (5, "Plang"); (7, "Plong") ])
