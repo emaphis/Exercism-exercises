@@ -62,6 +62,8 @@ GradeSchool  - None - Maps  ***
 
 Clock - Numbers - Modular arithmetic
 
+Bob  - Strings
+
 ---
 
 Enum, Bit handling - Allergies ***
