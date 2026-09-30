@@ -1,10 +1,12 @@
 # Exercism FSharp
 
-## Leaning exercises - F# concepts
-
 *** - not a concept yet
 
 ooo - update material
+
+## Leaning exercises - F# concepts
+
+HelloWorld
 
 Lucians Luscious Lasagna - Basics Bindings - let
 
@@ -14,9 +16,7 @@ Log Levels - Strings ooo split, array access.
 
 Valentines Day - Discriminated Unions - pattern matching.
 
-Cars Assemble - Numbers
-
-Cars Assemble - If Expressions
+Cars Assemble - Numbers, If Expressions
 
 Booking for Beauty - DateTimes
 
@@ -68,9 +68,9 @@ Kindergarten Garden - Discriminated Unions
 
 Robot Simulator - Strings, Discriminated Unions
 
----
+Allergies - None - Enum, Bit handling ***
 
-Enum, Bit handling - Allergies ***
+---
 
 Result type, Railroad oriented programming - PhoneNumber ***
 
