@@ -3,53 +3,49 @@ module RobotSimulator
 type Direction = North | East | South | West
 type Position = int * int
 
-/// A Robot is a Direction and a Positon
-type Robot =
-    { direction: Direction
-      position: Position }
-
 
 /// Turn Robots's direction Right
-let robotRight robot =
-    match robot.direction with
-    | North -> { robot with direction = East  }
-    | East  -> { robot with direction = South }
-    | South -> { robot with direction = West  }
-    | West  -> { robot with direction = North }
+let turnRight (direction, position) =
+    match direction with
+    | North -> East, position
+    | East  -> South, position
+    | South -> West, position
+    | West  -> North, position
 
 
-/// Turn Robots's dirction Left
-let robotLeft robot =
-    match robot.direction with
-    | North -> { robot with direction = West  }
-    | East  -> { robot with direction = North }
-    | South -> { robot with direction = East  }
-    | West  -> { robot with direction = South }
+/// Turn Robots's direction Left
+let turnLeft (direction, position) =
+    match direction with
+    | North -> West, position
+    | East  -> North, position
+    | South -> East, position
+    | West  -> South, position
 
 
-/// Advance Robot 1 postion
-let robotAdvance robot =
-    let (x, y) = robot.position
-    match robot.direction with
-    | North -> { robot with position = (x, y + 1) }
-    | East  -> { robot with position = (x + 1, y) }
-    | South -> { robot with position = (x, y - 1) }
-    | West  -> { robot with position = (x - 1, y) }
+/// Advance Robot 1 position
+let advance (direction, position) =
+    let x, y = position
+    match direction with
+    | North -> direction, (x, y + 1)
+    | East  -> direction, (x + 1, y)
+    | South -> direction, (x, y - 1)
+    | West  -> direction, (x - 1, y)
 
+// Instructions for robot represented as chars:
 // R' is Right | 'L' is Left | 'A' is Advance
 
-/// Move Robot given instruction represented as a char
-let processInstruction robot instruction =
+/// Move Robot given an instruction passed as a char
+let processInstruction (direction, position) instruction =
     match instruction with
-    | 'R' -> robotRight robot
-    | 'L' -> robotLeft robot
-    | 'A' -> robotAdvance robot
-    | _  -> failwith "Opps - Invalid instruction"
+    | 'R' -> turnRight (direction, position)
+    | 'L' -> turnLeft (direction, position)
+    | 'A' -> advance (direction, position)
+    | _  -> failwith "Oops - Invalid instruction"
 
 
 /// Create a Robot with direction and position
-let create direction position = { direction = direction; position = position}
+let create direction position = direction, position
 
-/// Move a Robot given as a sequence of instructions passed as a string.
+/// Move a Robot given a sequence of instructions passed as a string.
 let move instructions robot =
     Seq.fold processInstruction robot instructions

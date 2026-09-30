@@ -66,6 +66,8 @@ Bob  - Strings
 
 Kindergarten Garden - Discriminated Unions
 
+Robot Simulator - Strings, Discriminated Unions
+
 ---
 
 Enum, Bit handling - Allergies ***
