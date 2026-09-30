@@ -18,6 +18,7 @@
   <Project Path="line-up/LineUp.fsproj" />
   <Project Path="log-levels/LogLevels.fsproj" />
   <Project Path="lucians-luscious-lasagna/LuciansLusciousLasagna.fsproj" />
+  <Project Path="ocr-numbers/OcrNumbers.fsproj" />
   <Project Path="password-checker/PasswordChecker.fsproj" />
   <Project Path="pizza-pricing/PizzaPricing.fsproj" />
   <Project Path="queen-attack/QueenAttack.fsproj" />

@@ -2,7 +2,7 @@ module OcrNumbers
 
 
 /// Convert OCR digits (tuples) to string digits
-let convertDigit (dig: string * string * string) =
+let convertDigit (dig: string * string * string) : string =
    match dig with
    | ( " _ ",
        "| |",
@@ -44,7 +44,8 @@ let convertDigit (dig: string * string * string) =
 
     | _ -> "?"
 
-let convertDigits (inputList: string list list) =
+
+let convertDigits (inputList: string list list) : string =
     List.zip3 inputList[0] inputList[1] inputList[2]
     |> List.map convertDigit
     |> String.concat ""
@@ -61,7 +62,8 @@ let parseInput input =
     |> List.map convertDigits
     |> String.concat "," // Numbers separated by empty lines are recognized. Lines are joined by commas.
 
-let goodSize (input: string list) =
+/// Is the input letter 4 high and 3 across
+let goodSize (input: string list) : bool =
     input.Length % 4 = 0 &&
     input |> List.forall(fun str -> str.Length % 3 = 0)
 

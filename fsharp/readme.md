@@ -68,7 +68,9 @@ Kindergarten Garden - Discriminated Unions
 
 Robot Simulator - Strings, Discriminated Unions
 
-Allergies - None - Enum, Bit handling ***
+Allergies - Discriminated Unions, Flag Discriminated Unions - Enum, Bit handling ***
+
+OCR Numbers - None -
 
 ---
 
