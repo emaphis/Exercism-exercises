@@ -123,3 +123,4 @@ let ``Full garden - for Larry, last student's garden`` () =
     let diagram = "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV"
     let expected = [Plant.Grass; Plant.Violets; Plant.Clover; Plant.Violets]
     plants diagram student |> should equal expected
+

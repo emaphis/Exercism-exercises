@@ -1,5 +1,6 @@
 module KindergartenGarden
 
+
 /// Represents plants
 type Plant =
     | Radishes
@@ -15,7 +16,6 @@ let getPlant plant =
     | 'C' -> Clover
     | 'G' -> Grass
     | 'V' -> Violets
-    | _ -> What
 
 
 // Alice, Bob, Charlie, David, Eve, Fred, Ginny, Harriet, Ileana, Joseph, Kincaid, Larry
@@ -31,9 +31,8 @@ let getRows (diagram: string) =
     let row2 = rows[1].ToCharArray()
     row1, row2
 
-
 let plants diagram student =
     let row1, row2 = getRows diagram
     let idx = getStudentIndex student
-    let plants = [ row1[idx]; row1[idx + 1]; row2[idx]; row2[idx + 1] ]
-    List.map (fun plnt -> getPlant plnt) plants
+    [ row1[idx]; row1[idx + 1]; row2[idx]; row2[idx + 1] ]
+    |> List.map getPlant

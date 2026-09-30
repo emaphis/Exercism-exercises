@@ -64,6 +64,8 @@ Clock - Numbers - Modular arithmetic
 
 Bob  - Strings
 
+Kindergarten Garden - Discriminated Unions
+
 ---
 
 Enum, Bit handling - Allergies ***
