@@ -1,5 +1,19 @@
 # Exercism FSharp
 
+## Workflow
+
+exercism download --track=fsharp --exercise=pig-latin --force
+
+dotnet sln .\Exercism.slnx add .\pig-latin\PigLatin.fsproj
+
+cd .\pig-latin
+
+dotnet test
+
+exercism submit .\PigLatin.fs
+
+dotnet clean
+
 *** - not a concept yet
 
 ooo - update material
@@ -71,6 +85,10 @@ Robot Simulator - Strings, Discriminated Unions
 Allergies - Discriminated Unions, Flag Discriminated Unions - Enum, Bit handling ***
 
 OCR Numbers - None -
+
+Pig Latin - None - Pattern Matching, Regular Expressions
+
+Hamming -
 
 ---
 

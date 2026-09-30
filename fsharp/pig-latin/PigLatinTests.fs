@@ -46,6 +46,10 @@ let ``Word beginning with q without a following u`` () =
     translate "qat" |> should equal "atqay"
 
 [<Fact>]
+let ``Word beginning with consonant and vowel containing qu`` () =
+    translate "liquid" |> should equal "iquidlay"
+
+[<Fact>]
 let ``Word beginning with ch`` () =
     translate "chair" |> should equal "airchay"
 

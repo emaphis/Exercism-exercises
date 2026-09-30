@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/pig-latin/">
+    <Project Path="pig-latin/PigLatin.fsproj" />
+  </Folder>
   <Project Path="accumulate/Accumulate.fsproj" />
   <Project Path="allergies/Allergies.fsproj" />
   <Project Path="annalyns-infiltration/AnnalynsInfiltration.fsproj" />
