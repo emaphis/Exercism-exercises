@@ -88,11 +88,13 @@ OCR Numbers - None -
 
 Pig Latin - None - Pattern Matching, Regular Expressions
 
-Hamming -
+Hamming - None
 
 Pangram - Strings
 
 Isogram - Strings
+
+Twelve Days - None
 
 ---
 

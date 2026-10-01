@@ -33,6 +33,7 @@
   <Project Path="squeaky-clean/SqueakyClean.fsproj" />
   <Project Path="tisbury-treasure-hunt/TisburyTreasureHunt.fsproj" />
   <Project Path="tracks-on-tracks-on-tracks/TracksOnTracksOnTracks.fsproj" />
+  <Project Path="twelve-days/TwelveDays.fsproj" />
   <Project Path="two-fer/TwoFer.fsproj" />
   <Project Path="valentines-day/ValentinesDay.fsproj" />
 </Solution>

@@ -1,5 +1,6 @@
 module TwelveDays
 
+// `days` `numbers` `gifts` are lists indexed by (day -1)
 let days =
     [ "first"; "second"; "third"; "fourth"; "fifth"; "sixth"; "seventh"; "eighth"; "ninth"
       "tenth"; "eleventh"; "twelfth" ]
@@ -21,18 +22,17 @@ let gifts =
       "Pipers Piping, "
       "Drummers Drumming, " ]
 
-
+/// Returns the list of gifts one gift per day.
+/// Counts down from passed day.
 let stanza day =
-    let giftStr =
+    let giftString =
         [ day-1 .. -1 .. 0 ]    // count down.
-        |> List.map (fun dy -> numbers[dy] + " " + gifts[dy])
-        |> List.reduce (fun acc nxt -> acc + nxt)
+        |> List.map (fun day -> numbers[day] + " " + gifts[day])
+        |> List.reduce (fun acc next -> acc + next)
 
-    $"On the {days[day-1]} day of Christmas my true love gave to me: {giftStr}."
+    $"On the {days[day-1]} day of Christmas my true love gave to me: {giftString}."
 
 
 let recite start stop =
     [ start .. stop ]
     |> List.map stanza
-
-;;;
