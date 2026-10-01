@@ -14,6 +14,7 @@
   <Project Path="hello-world/HelloWorld.fsproj" />
   <Project Path="improved-password-checker/ImprovedPasswordChecker.fsproj" />
   <Project Path="interest-is-interesting/InterestIsInteresting.fsproj" />
+  <Project Path="isogram/Isogram.fsproj" />
   <Project Path="kindergarten-garden/KindergartenGarden.fsproj" />
   <Project Path="leap/Leap.fsproj" />
   <Project Path="line-up/LineUp.fsproj" />

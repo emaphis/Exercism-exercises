@@ -92,6 +92,8 @@ Hamming -
 
 Pangram - Strings
 
+Isogram - Strings
+
 ---
 
 Result type, Railroad oriented programming - PhoneNumber ***

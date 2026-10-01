@@ -6,10 +6,9 @@ let normalize str =
     |> Seq.filter System.Char.IsLetter
     |> Seq.map System.Char.ToLower
 
-
+/// Compute if the passed string is an isogram (non-duplicated letters)
+/// Note:  Non-isogram word will be shorter when duplicated letters are removed
 let isIsogram (str: string): bool =
-    let seq = normalize str
-    let len = seq |> Seq.length
-    let dst = seq |> Seq.distinct |> Seq.length
-
-    len = dst
+    let sequence = normalize str
+    let distinct = sequence |> Seq.distinct
+    not (Seq.length distinct < Seq.length sequence)
