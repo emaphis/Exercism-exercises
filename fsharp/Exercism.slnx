@@ -20,6 +20,7 @@
   <Project Path="log-levels/LogLevels.fsproj" />
   <Project Path="lucians-luscious-lasagna/LuciansLusciousLasagna.fsproj" />
   <Project Path="ocr-numbers/OcrNumbers.fsproj" />
+  <Project Path="pangram/Pangram.fsproj" />
   <Project Path="password-checker/PasswordChecker.fsproj" />
   <Project Path="pig-latin/PigLatin.fsproj" />
   <Project Path="pizza-pricing/PizzaPricing.fsproj" />

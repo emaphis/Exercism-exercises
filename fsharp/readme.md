@@ -90,6 +90,8 @@ Pig Latin - None - Pattern Matching, Regular Expressions
 
 Hamming -
 
+Pangram - Strings
+
 ---
 
 Result type, Railroad oriented programming - PhoneNumber ***

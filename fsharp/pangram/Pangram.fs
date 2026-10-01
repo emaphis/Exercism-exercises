@@ -1,8 +1,8 @@
 module Pangram
 
 let isPangram (input: string): bool =
-    let input = input.ToLower()
     let alphabet = [ 'a' .. 'z' ]
+    let example = input.ToLower()
 
     alphabet
-    |> Seq.forall input.Contains
+    |> Seq.forall example.Contains
