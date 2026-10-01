@@ -1,7 +1,4 @@
 <Solution>
-  <Folder Name="/pig-latin/">
-    <Project Path="pig-latin/PigLatin.fsproj" />
-  </Folder>
   <Project Path="accumulate/Accumulate.fsproj" />
   <Project Path="allergies/Allergies.fsproj" />
   <Project Path="annalyns-infiltration/AnnalynsInfiltration.fsproj" />
@@ -13,6 +10,7 @@
   <Project Path="clock/Clock.fsproj" />
   <Project Path="grade-school/GradeSchool.fsproj" />
   <Project Path="guessing-game/GuessingGame.fsproj" />
+  <Project Path="hamming/Hamming.fsproj" />
   <Project Path="hello-world/HelloWorld.fsproj" />
   <Project Path="improved-password-checker/ImprovedPasswordChecker.fsproj" />
   <Project Path="interest-is-interesting/InterestIsInteresting.fsproj" />
@@ -23,6 +21,7 @@
   <Project Path="lucians-luscious-lasagna/LuciansLusciousLasagna.fsproj" />
   <Project Path="ocr-numbers/OcrNumbers.fsproj" />
   <Project Path="password-checker/PasswordChecker.fsproj" />
+  <Project Path="pig-latin/PigLatin.fsproj" />
   <Project Path="pizza-pricing/PizzaPricing.fsproj" />
   <Project Path="queen-attack/QueenAttack.fsproj" />
   <Project Path="raindrops/Raindrops.fsproj" />

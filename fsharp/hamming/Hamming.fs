@@ -5,4 +5,5 @@ let distance (strand1: string) (strand2: string): int option =
     else
         Seq.zip strand1 strand2
         |> Seq.filter (fun (chr1, chr2) -> chr1 <> chr2)
-        |> Seq.length |> Some
+        |> Seq.length
+        |> Some
