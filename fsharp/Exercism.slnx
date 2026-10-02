@@ -23,6 +23,7 @@
   <Project Path="ocr-numbers/OcrNumbers.fsproj" />
   <Project Path="pangram/Pangram.fsproj" />
   <Project Path="password-checker/PasswordChecker.fsproj" />
+  <Project Path="phone-number/PhoneNumber.fsproj" />
   <Project Path="pig-latin/PigLatin.fsproj" />
   <Project Path="pizza-pricing/PizzaPricing.fsproj" />
   <Project Path="queen-attack/QueenAttack.fsproj" />
