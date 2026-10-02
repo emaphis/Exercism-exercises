@@ -102,4 +102,6 @@ High Scores - None - List processing
 
 Bank Account - Floating Point Numbers - Lock Synchronization
 
+Binary Search Tree - None - Recursion 
+
 ---

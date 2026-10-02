@@ -4,6 +4,7 @@
   <Project Path="annalyns-infiltration/AnnalynsInfiltration.fsproj" />
   <Project Path="bandwagoner/Bandwagoner.fsproj" />
   <Project Path="bank-account/BankAccount.fsproj" />
+  <Project Path="binary-search-tree/BinarySearchTree.fsproj" />
   <Project Path="bird-watcher/BirdWatcher.fsproj" />
   <Project Path="bob/Bob.fsproj" />
   <Project Path="booking-up-for-beauty/BookingUpForBeauty.fsproj" />
