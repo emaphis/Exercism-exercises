@@ -22,12 +22,12 @@ let validateLength (input: string) =
     | _ -> Error "incorrect number of digits"
 
 
-/// Number should not conatain letters or punctuation
+/// Number should not contain letters or punctuation
 let validateNumeric (input: string) =
     match input with
-    | inpt when Seq.forall Char.IsNumber inpt -> Ok input
-    | inpt when Seq.exists Char.IsLetter inpt -> Error "letters not permitted"
-    | inpt when Seq.exists Char.IsPunctuation inpt -> Error "punctuations not permitted"
+    | input when Seq.forall Char.IsNumber input -> Ok input
+    | input when Seq.exists Char.IsLetter input -> Error "letters not permitted"
+    | input when Seq.exists Char.IsPunctuation input -> Error "punctuations not permitted"
     | _  -> Error "I don't know why I got here."
 
 
@@ -37,7 +37,6 @@ let validateAreaCode (input: string) =
     | '0' -> Error "area code cannot start with zero"
     | '1' -> Error "area code cannot start with one"
     | _ -> Ok input
-
 
 
 /// Exchange code can't start with 0 or 1
