@@ -1,5 +1,6 @@
 module BankAccount
 
+/// The Bank Account
 type Account =
     { mutable Balance: decimal
       Open: bool
@@ -19,12 +20,13 @@ let closeAccount (account: Account) =
         Open = false }
 
 let getBalance (account: Account) : Option<decimal> =
-   if account.Open then Some account.Balance
-   else None
+    lock account.Lock ( fun() ->
+       if account.Open then Some account.Balance
+       else None
+   )
 
 let updateBalance (change: decimal) (account: Account) =
     lock account.Lock (fun () ->
-            account.Balance <- account.Balance + change
+        account.Balance <- account.Balance + change
     )
-
     account

@@ -100,10 +100,6 @@ Phone Number - None - Result Type, Railway Oriented Programming
 
 High Scores - None - List processing
 
+Bank Account - Floating Point Numbers - Lock Synchronization
+
 ---
-
-Result type, Railroad oriented programming - PhoneNumber ***
-
-Should moved to Lists - High Scores ooo
-
-lock synchronization - BankAccount ***

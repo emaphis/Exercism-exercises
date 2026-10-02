@@ -74,4 +74,3 @@ let ``Account can be updated from multiple threads`` () =
     |> ignore
 
     getBalance account |> should equal (Some 1000.0m)
-

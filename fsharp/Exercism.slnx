@@ -3,6 +3,7 @@
   <Project Path="allergies/Allergies.fsproj" />
   <Project Path="annalyns-infiltration/AnnalynsInfiltration.fsproj" />
   <Project Path="bandwagoner/Bandwagoner.fsproj" />
+  <Project Path="bank-account/BankAccount.fsproj" />
   <Project Path="bird-watcher/BirdWatcher.fsproj" />
   <Project Path="bob/Bob.fsproj" />
   <Project Path="booking-up-for-beauty/BookingUpForBeauty.fsproj" />

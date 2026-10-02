@@ -1,17 +1,19 @@
 // Lock statement - Bank Account
 
-// The lock statement - ensure exclusive access to a shared resource
+open System
 
-// The lock statement acquires the mutual-exclusion lock for a given object, executes a statement block, and then releases the lock.
+let locker = obj() // object used for locking
+let mutable counter = 0
 
-(*
-// The lock statement in C#
+let incrementCounter () =
+    lock locker (fun () ->
+        // Critical section
+        counter <- counter + 1
+        printfn "Counter is now %d" counter
+    )
 
-lock (x)
-}
-    // the code.
-}
-
-// `x` is an expression of `System.Threading.Lock` type, or a `reference` type.
-
-*)    
+// Simulate multiple threads
+[ for _ in 1 .. 5 -> async { incrementCounter() } ]
+|> Async.Parallel
+|> Async.RunSynchronously
+|> ignore
