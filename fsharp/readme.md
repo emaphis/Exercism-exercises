@@ -98,6 +98,8 @@ Twelve Days - None
 
 Phone Number - None - Result Type, Railway Oriented Programming
 
+High Scores - None - List processing
+
 ---
 
 Result type, Railroad oriented programming - PhoneNumber ***
