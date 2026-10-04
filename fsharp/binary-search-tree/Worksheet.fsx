@@ -1,4 +1,4 @@
-module BinarySearchTree
+﻿// Binary search tree.
 
 /// Self-referential binary tree definition
 type Node =
@@ -12,8 +12,7 @@ let right node : Node option = node.Right
 
 let data node = node.Data
 
-
-// Insert data item into tree
+/// Insert data item into tree
 let rec insert (nd: Node) (data: int): Node =
     let node (currentNode: Node option) (value: int): Node =
         match currentNode with
@@ -31,9 +30,24 @@ let create items =
     |> List.tail
     |> List.fold insert { Data = List.head items; Left = None; Right = None}
 
-let rec sortedData node =
-    let sorted (branch: Node option): int list =
-        match branch with
-        | Some n -> sortedData n
-        | None -> []
-    sorted node.Left @ [node.Data] @ sorted node.Right
+
+
+let treeData = create [4]
+treeData |> data = 4
+treeData |> left = None
+treeData |> right = None
+
+let treeData2 = create [4; 2]
+treeData2 |> data = 4
+treeData2 |> left |> Option.map data = (Some 2)
+treeData2 |> left |> Option.bind left = None
+treeData2 |> left |> Option.bind right = None
+treeData2 |> right = None
+
+let treeData3 = create [4; 4]
+treeData3 |> data = 4
+treeData3 |> left |> Option.map data = (Some 4)
+treeData3 |> left |> Option.bind left = None
+treeData3 |> left |> Option.bind right = None
+treeData3 |> right = None
+

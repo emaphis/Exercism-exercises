@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="Wotksheet.fsx" />
+    <None Include="Worksheet.fsx" />
     <Compile Include="BinarySearchTree.fs" />
     <Compile Include="BinarySearchTreeTests.fs" />
   </ItemGroup>
