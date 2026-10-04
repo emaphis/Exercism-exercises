@@ -10,6 +10,7 @@
   <Project Path="booking-up-for-beauty/BookingUpForBeauty.fsproj" />
   <Project Path="cars-assemble/CarsAssemble.fsproj" />
   <Project Path="clock/Clock.fsproj" />
+  <Project Path="FSharpExperiments/FSharpExperiments.fsproj" Id="2447d5b6-fafb-41ee-a9bf-930e0902544d" />
   <Project Path="grade-school/GradeSchool.fsproj" />
   <Project Path="guessing-game/GuessingGame.fsproj" />
   <Project Path="hamming/Hamming.fsproj" />
@@ -28,6 +29,7 @@
   <Project Path="phone-number/PhoneNumber.fsproj" />
   <Project Path="pig-latin/PigLatin.fsproj" />
   <Project Path="pizza-pricing/PizzaPricing.fsproj" />
+  <Project Path="pov/Pov.fsproj" />
   <Project Path="queen-attack/QueenAttack.fsproj" />
   <Project Path="raindrops/Raindrops.fsproj" />
   <Project Path="robot-simulator/RobotSimulator.fsproj" />
