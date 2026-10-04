@@ -14,22 +14,23 @@ let data node = node.Data
 
 
 // Insert data item into tree
-let rec insert (nd: Node) (data: int): Node =
-    let node (currentNode: Node option) (value: int): Node =
-        match currentNode with
-        | Some n -> insert n value
-        | None -> { Data = value; Left = None; Right = None }
-
-    if data <= nd.Data then
-        { nd with Left = Some (node nd.Left data) }
-      else
-        { nd with Right = Some (node nd.Right data) }
+let rec insert newValue node =
+    if newValue <= node.Data then
+        match node.Left with
+        | None -> { node with Left = Some { Data = newValue; Left = None; Right = None } }
+        | Some child -> { node with Left = Some (insert newValue child) }
+    else
+        match node.Right with
+        | None -> { node with Right = Some { Data = newValue; Left = None; Right = None } }
+        | Some child -> { node with Right = Some (insert newValue child) }
 
 /// Walk the items list inserting each item into the tree
 let create items =
-    items
-    |> List.tail
-    |> List.fold insert { Data = List.head items; Left = None; Right = None}
+    match items with
+    | [] -> failwith "Cannot create an empty tree"
+    | head :: tail ->
+        let initialRoot = { Data = head; Left = None; Right = None }
+        tail |> List.fold (fun acc value -> insert value acc) initialRoot
 
 let rec sortedData node =
     let sorted (branch: Node option): int list =
