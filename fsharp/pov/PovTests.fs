@@ -5,17 +5,13 @@ open Xunit
 
 open Pov
 
-let rec graphToList (graph: Graph<'a>) = 
+let rec graphToList (graph: Graph<'a>) =
     let right =
         graph.children
         |> List.sortBy (fun x -> x.value)
         |> List.collect graphToList
     [graph.value] @ right
-
-let mapToList graph =
-    match graph with
-    | Some x -> graphToList x
-    | None -> []
+let mapToList graph = match graph with | Some x -> graphToList x | None -> []
 
 [<Fact>]
 let ``Results in the same tree if the input tree is a singleton`` () =
